@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-description {
+    flex: 1;
+}
+
+h2 {
+    color: #333;
+}
+
+.customer-reviews {
+    margin-top: 20px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.purchase-links {
+    margin-top: 20px;
+}
+
+.purchase-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.purchase-links a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.purchase-links a.amazon-link {
+    color: #FF9900; /* Amazon color */
+}
+

@@ -1,0 +1,19 @@
+/* I. Target and style the boxes with IDs "box1" and "box3" using attribute selectors */
+.box[id="box1"],.box[id="box3"] {
+    background-color: #2ecc71; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 10px; /* Add padding */
+}
+
+/* II. Style the text content inside the boxes */
+.box {
+    font-size: 14px; /* Increase font size */
+    font-weight: bold; /* Set font weight */
+}
+
+/* III. Add a solid border around box 2 */
+.box[id="box2"] {
+    border: 2px dashed #3498db; /* Set border color, width, and style */
+    padding: 10px; /* Add padding for consistency */
+    color: #000; /* Set text color for box 2 */
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f0f0; /* Set body background color */
+}
+
+.h5-style {
+    color: darkorange; /* Style for h5 heading */
+}
+
+.paragraph-style {
+    color: #333333; /* Text color for paragraphs */
+    font-size: 16px; /* Font size for paragraphs */
+}

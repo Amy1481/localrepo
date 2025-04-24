@@ -1,36 +1,23 @@
-package Assignment_2;
+package Assignment_1;
 import java.util.Scanner;
-class Product{
-  int prodID,p,q;
-  static int TotalP;
-  Product(int prodID,int p,int q){
-  this.prodID=prodID;
-  this.p=p;
-  this.q=q;
-  TotalP+=this.p;
-  }
-void display(){
-    System.out.println(prodID+"\t        "+p+"\t      "+q);
- }
-}
 public class Q3 {
 public static void main(String[] args) {
     Scanner Sc=new Scanner(System.in);
-    System.out.println("Enter the Quantity: ");
+    System.out.println("Enter a no= ");
     int n=Sc.nextInt();
-    Product P[]=new Product[n];
-    for(int i=0;i<n;i++){
-        System.out.println("Enter Product ID,Price,Quantity: ");
-        int prodID=Sc.nextInt();
-        int p=Sc.nextInt();
-        int q=Sc.nextInt();
-        P[i]=new Product(prodID, p, q);
+    int r=0,sum=0,prod=1;
+    while(n>0){
+        r=n%10;
+        n=n/10;
+        sum=sum+r;
+        prod=prod*r;
     }
-   System.out.println("Product Id\tPrice\tQuantity: ");
-   for(int i=0;i<n;i++){
-    P[i].display();
-   }
-   System.out.println("Total Price: "+Product.TotalP);
-   Sc.close();
- }
+    if(sum==prod){
+        System.out.println("spy");
+    }
+    else{
+        System.out.println("Not");
+    }
+    Sc.close();
+}
 }

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center; /* Center the products */
+    flex-wrap: wrap; /* Allow wrapping of products */
+    background-color: #f9f9f9; /* Light background color */
+    font-family: Arial, sans-serif; /* Font family for the text */
+}
+
+.product-container {
+    width: 600px; /* Content width */
+    padding: 30px; /* Padding on all sides */
+    border: 15px solid #333; /* Border with color */
+    margin: 20px; /* Margin around the container */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: #fff; /* White background for the product container */
+    text-align: center; /* Center text within the container */
+}
+
+.product-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-description {
+    font-size: 16px; /* Font size for description */
+    color: #555; /* Darker gray color for text */
+}

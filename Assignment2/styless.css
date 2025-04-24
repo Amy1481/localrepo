@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: space-around; /* Space out the boxes */
+    align-items: center; /* Center boxes vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light background for contrast */
+    margin: 0; /* Remove default margin */
+}
+
+.box {
+    width: 400px; /* Fixed width for each box */
+    height: 400px; /* Fixed height for each box */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-size: 50px; /* Font size for box text */
+    color: white; /* Text color */
+    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition for padding and margin */
+}
+
+.box1 {
+    background-color: rgb(226, 85, 125);/* Red background */
+    border: 1px solid #b51d4b; /* Red border with 1px thickness */
+    padding: 10px; /* Initial padding */
+    margin: 10px; /* Initial margin */
+}
+
+.box2 {
+    background-color: #73beb7; /* Green background */
+    border: 2px solid rgb(7, 93, 96); /* Green border with 2px thickness */
+    padding: 10px; /* Initial padding */
+    margin: 10px; /* Initial margin */
+}
+
+.box3 {
+    background-color: #bb78d7; /* Blue background */
+    border: 3px solid rgb(94, 21, 133); /* Blue border with 3px thickness */
+    padding: 10px; /* Initial padding */
+    margin: 10px; /* Initial margin */
+}
+
+/* Hover effects to increase padding and margin */
+.box:hover {
+    padding: 30px; /* Increase padding */
+    margin: 50px; /* Increase margin */
+}

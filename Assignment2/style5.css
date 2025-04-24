@@ -1,0 +1,44 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Vertical Menu Bar */
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Change to 'left: 0;' to stick to the left */
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.vertical-menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.vertical-menu a:hover {
+    background-color: #575757;
+}
+
+/* Content Styling */
+.content {
+    margin-right: 220px; /* Adjust margin to avoid overlap with the menu */
+    padding: 20px;
+}
+
+/* Simulate long content */
+.content div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+}

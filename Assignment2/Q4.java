@@ -1,49 +1,21 @@
-package Assignment_2;
-class Deposit{
-    long principal;
-    int time;
-    double rate,totPrice;
-    Deposit(){
-        this.principal=0;
-        this.time=0;
-        this.rate=0.0;
-        this.totPrice=0.0;
-    }
-    Deposit(long principal,int time,double rate){
-        this.principal=principal;
-        this.time=time;
-        this.rate=rate;
-        calcPrice();
-    }
-    Deposit(long principal,int time){
-        this.principal=principal;
-        this.time=time;
-        this.rate=7.1;
-        calcPrice();
-    }
-    Deposit(long principal,double rate){
-        this.principal=principal;
-        this.time=2;
-        this.rate=rate;
-        calcPrice();
-    }
-    void display(){
-        System.out.println("Principal: "+principal+"\nTime: "+time+"\nRate: "+rate+"\nTotal Pp: "+totPrice);
-    }
-    void calcPrice(){
-        this.totPrice=principal+(principal*time*rate)/100;
+package Assignment_1;
+public class Q4 {
+public static void main(String[] args) {
+    char ar[]={'C','A','R','B','O','N'};
+    for(int i=0;i<ar.length;i++){
+        for(int j=0;j<ar.length;j++){
+            for(int k=0;k<ar.length;k++){
+                for(int l=0;l<ar.length;l++){
+                    for(int m=0;m<ar.length;m++){
+                        for(int n=0;n<ar.length;n++){
+                            if(i!=j && i!=k && i!=l && i!=m && i!=n && j!=k && j!=l && j!=m && j!=n && k!=l && k!=m && k!=n && l!=m && l!=n && m!=n){
+                                System.out.println(" "+ar[i]+ar[j]+ar[k]+ar[l]+ar[m]+ar[n]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-public class Q4 {
-    public static void main(String[] args) {
-     Deposit D1=new Deposit(10000,5,7.1); 
-     Deposit D2=new Deposit(20000,2);
-     Deposit D3=new Deposit(5000,5.3);
-     System.out.println("Deposit 1: ");
-     D1.display();
-     System.out.println("\nDeposit 2: ");
-     D2.display();
-     System.out.println("\nDeposit 3: ");
-     D3.display();
-    }
 }
