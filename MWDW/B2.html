@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .c1 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid blueviolet;
+        }
+
+        .c2 {
+            background-color: beige;
+        }
+
+        .c3 {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+    <br>
+    <br>
+    <div id="id1" class="c1 c2 c3"></div>
+    <script>
+        $("#btn").click(function () {
+            $("#id1").removeClass("c3");
+        });
+    </script>
+</body>
+
+</html>

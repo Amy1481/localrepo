@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium harum vel alias impedit aut eum sit cupiditate ut blanditiis exercitationem dolorum mollitia pariatur nam facilis tenetur voluptate dolor ducimus asperiores necessitatibus omnis, ex, quos eaque. Dolores quae unde assumenda maxime nemo molestiae recusandae cum. Deserunt quidem blanditiis reiciendis voluptates quae.</p>
+    <button id="btn">click</button>
+</body>
+<script>
+    var amisha=$.noConflict();
+    amisha("#btn").click(()=>{
+        amisha("#p1").text("Hello World");
+    })
+</script>
+</html>

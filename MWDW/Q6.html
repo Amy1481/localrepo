@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>News Website</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.top-news {
+    flex: 3;
+    margin-right: 20px;
+}
+
+article {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside {
+    flex: 1;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">NewsLogo</div>
+        <div class="breaking-news">Breaking News: Major event happening now!</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="top-news">
+            <h2>Top News Stories</h2>
+            <article>
+                <h3>Story Title 1</h3>
+                <p>Summary of story 1.</p>
+            </article>
+            <article>
+                <h3>Story Title 2</h3>
+                <p>Summary of story 2.</p>
+            </article>
+            <article>
+                <h3>Story Title 3</h3>
+                <p>Summary of story 3.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Trending News</h2>
+            <ul>
+                <li><a href="#">Trending Story 1</a></li>
+                <li><a href="#">Trending Story 2</a></li>
+                <li><a href="#">Trending Story 3</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contact: info@newswebsite.com | Privacy Policy</p>
+        <p>&copy; 2023 News Website</p>
+    </footer>
+</body>
+</html>

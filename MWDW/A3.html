@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <ul id="ul1">
+            <li><span id="span1">Rose</span></li>
+            <li><span id="span2">Tulip</span></li>
+        </ul>
+    </div>
+    <script>
+       var pvalue = $("#ul1").find("#span2");
+       pvalue.css({"border":"2px solid black","background-color":"brown"});
+    </script>
+</body>
+</html>
